@@ -24,7 +24,8 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body id="page-top">
+    <body id="page-top" onload="">
+        <audio src="/images/crocopad.ogg" controls="" id="audio" hidden=""></audio>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background:url('images/.png')">
             <div class="container px-4 px-lg-5">
@@ -35,7 +36,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <a class="btn btn-primary" href="https://dexscreener.com" style="margin:10px 0; font-size:12px; padding:15px;">Dex</a>
+                        <a class="btn btn-primary" href="https://t.me" style="margin:10px 0; font-size:12px; padding:15px;">T</a>
                     </ul>
                 </div>
             </div>
@@ -44,23 +45,6 @@
         <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center" style="display:none !important;">
             <!-- Play crocopad.ogg -->
 
-<!-- Play crocopad.ogg with javacsript -->
-<script>
-   var sound = new buzz.sound("", {
-    formats: [ "ogg", "mp3", "aac" ]
-});
-
-sound.play()
-     .fadeIn()
-     .loop()
-     .bind("timeupdate", function() {
-        var timer = buzz.toTimer(this.getTime());
-        document.getElementById("timer").innerHTML = timer;
-     });
-    
-
-
-</script>
         </div>
         <header class="masthead">
             
@@ -221,6 +205,13 @@ sound.play()
 
 // WOW active
  new WOW().init();
+
+ function playAudio() {
+ var sample = document.getElementById("audio");
+    sample.play();
+    console.log('playing');
+ }
+ setTimeout(playAudio, 2000);
         </script>
     </body>
 </html>
