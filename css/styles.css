@@ -243,7 +243,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: goldenrod;
+  color: #ffaaaa;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3040,20 +3040,20 @@ textarea.form-control-lg {
 }
 .btn-primary:hover {
   color: #000;
-  background-color: goldenrod;
-  border-color: goldenrod;
+  background-color: #ffaaaa;
+  border-color: #ffaaaa;
   transform:scale(0.96);
   transition:0.2s ease;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: goldenrod;
-  border-color: goldenrod;
+  background-color: #ffaaaa;
+  border-color: #ffaaaa;
   box-shadow: 0 0 0 0.25rem rgba(123, 175, 172, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: goldenrod;
+  background-color: #ffaaaa;
   border-color: #4b7976;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
@@ -3591,7 +3591,7 @@ textarea.form-control-lg {
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: goldenrod;
+  color: #ffaaaa;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -4069,7 +4069,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: goldenrod;
+  color: #ffaaaa;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4933,13 +4933,13 @@ textarea.form-control-lg {
 }
 .page-link:hover {
   z-index: 2;
-  color: goldenrod;
+  color: #ffaaaa;
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
 .page-link:focus {
   z-index: 3;
-  color: goldenrod;
+  color: #ffaaaa;
   background-color: #e9ecef;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(100, 161, 157, 0.25);
@@ -6596,10 +6596,10 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-  color: gold;
+  color: pink;
 }
 .link-primary:hover, .link-primary:focus {
-  color: goldenrod;
+  color: #ffaaaa;
 }
 
 .link-secondary {
@@ -11522,7 +11522,7 @@ body {
     color: gold;
   }
   #mainNav .nav-link:hover {
-    color: goldenrod;
+    color: #ffaaaa;
   }
   #mainNav .nav-link:active {
     color: #000;
@@ -11531,7 +11531,7 @@ body {
     background-color: rgba(0, 0, 0, 1);
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: goldenrod;
+    color: #ffaaaa;
   }
   #mainNav.navbar-shrink .nav-link {
     color: gold;
@@ -11539,13 +11539,13 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: goldenrod;
+    color: #ffaaaa;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: goldenrod;
+    color: #ffaaaa;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: goldenrod;
+    color: #ffaaaa;
     outline: none;
     border-bottom: 0.25rem solid gold;
   }
@@ -11615,7 +11615,10 @@ body {
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  /* insert background temple.jpg */
+  background: rgb(1,1,1);
+        background: linear-gradient(90deg, rgba(1,1,1,1) 2%, #ffaaaa 41%, #ffaaaa 50%, rgb(4, 126, 137) 59%, #000 95%);
+  
 }
 .about-section p {
   margin-bottom: 5rem;
@@ -11706,6 +11709,11 @@ body {
 
 .footer {
   padding: 5rem 0;
+  /* blend in with the black */
+  
+}
+.footer-main{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg1.jpg");
 }
 
  /* Style the video: 100% width and height to cover the entire window */
